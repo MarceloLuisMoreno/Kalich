@@ -1,0 +1,131 @@
+/* Seccion Trabajos */
+
+.tituloSeccionTrabajo {
+    font-size: $sizeTit;
+    font-weight: bolder;
+}
+
+
+.fondo-trabajo1 {
+    background-image: url("../img/habAdoles.png");
+}
+
+.fondo-trabajo2 {
+    background-image: url("../img/habMatrimonial.png");
+}
+
+.fondo-trabajo3 {
+    background-image: url("../img/crearPlack.png");
+}
+
+.fondo-trabajo4 {
+    background-image: url("../img/brbAmoblamientos.png");
+}
+
+.fondo-trabajo5 {
+    background-image: url("../img/vittalia.png");
+}
+
+
+.sizePhoto {
+    width: 35%;
+    min-width: 260px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+.sizePhoto:hover {
+    transform: scale(1.5);
+}
+
+%Flexbox {
+    display: flex;
+    align-items: center;
+}
+
+.containerCentrado {
+    @extend %Flexbox;
+    justify-content: center;
+}
+
+.containerCentradoTrabajos {
+    @extend %Flexbox;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+
+.sizeVideo {
+    width: 30%;
+}
+
+.backgroundAmarillo {
+    background-color: rgb(246, 242, 124);
+}
+
+/* boton Home */
+.botonHome {
+    text-decoration: none;
+    font-size: medium;
+    color: $amarillo;
+    background-color: $grisoscuro;
+    border-radius: 8px;
+    padding: 0.5em;
+    margin: 2%;
+
+    &:hover {
+        color: $negro;
+    }
+}
+
+
+.fondoTrabajos {
+    background-color: $grisclaro;
+    border-radius: 3%;
+}
+
+.margenEstaticoNav {
+    height: 6.5rem;
+    background-color: $grisclaro;
+}
+
+.margenMenuTrabajos {
+    margin: 6.5rem 0 1rem 0;
+}
+
+.tituloTrabajos {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    color: $blanco;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+
+
+    @include media(xs) {
+        margin: 2%;
+        padding: 2%;
+        font-size: .8rem;
+    }
+
+    @include media(sm) {
+        margin: 2%;
+        padding: 2%;
+        font-size: .9rem;
+    }
+
+    @include media(md) {
+        margin: 4%;
+        padding: 3%;
+        font-size: 1.2rem;
+    }
+
+    @include media(lg) {
+        margin: 4%;
+        padding: 3%;
+        font-size: 1.5rem;
+    }
+
+}

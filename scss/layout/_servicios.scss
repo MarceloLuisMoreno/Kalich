@@ -1,0 +1,91 @@
+/* Seccion Servicios */
+
+.tituloSeccionServicios {
+    font-family: 'Lato', sans-serif !important;
+    font-size: $sizeTit;
+    font-weight: bolder;
+}
+
+
+.colorServicios {
+    background-color: $grisclaro;
+    opacity: 93%;
+}
+
+.backgroundservicios {
+    background-color: $amarillo;
+}
+
+
+.size-foto-servicios {
+    width: 90%;
+}
+
+.containerServicios {
+    text-align: center;
+    margin: 0%;
+}
+
+.tituloServicios {
+    padding: 4%;
+    margin: 3%;
+    font-size: 2.5rem;
+    -moz-text-fill-color: $amarillo;
+    -webkit-text-fill-color: $amarillo;
+    -moz-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
+    -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+    box-shadow: inset 0 0.5em 1.5em rgba(246, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    
+    @include media(xs) {
+        margin: 1%;
+        padding: 1%;
+        font-size: 1rem;
+    }
+
+    @include media(sm) {
+        margin: 3%;
+        padding: 3%;
+        font-size: 1.5rem;
+    }
+
+    @include media(md){
+        margin: 3%;
+        padding: 3%;
+        font-size: 1.8rem;
+    }
+
+}
+
+
+.textoServicios {
+    padding: 6%;
+    margin: 3%;
+    font-size:  1.2rem;
+    text-align: justify;
+    color: $negro;
+    
+    @include media(xs) {
+        margin: 1%;
+        padding: 1%;
+        font-size: .6rem;
+    }
+
+    @include media(sm) {
+        margin: 3%;
+        padding: 3%;
+        font-size: .8rem;
+    }
+
+    @include media(md){
+        margin: 3%;
+        padding: 3%;
+        font-size: 1rem;
+    }
+
+}
+
+.container-servicios {
+    max-width: 80%
+}

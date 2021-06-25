@@ -1,0 +1,60 @@
+/* Footer */
+
+.tituloFooter {
+    font-size: $sizeTit;
+    font-weight: bolder;
+}
+
+.fondoFooter {
+    background-color: $grisclaro;
+}
+
+.footerIndex {
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sizeTextoFooter {
+    padding: 3%;
+    font-size: 1rem;
+    color: $negro;
+
+    @include media(xs) {
+        font-size: .6rem;
+    }
+
+    @include media(sm) {
+        font-size: .7rem;
+    }
+
+    @include media(md) {
+        font-size: .9rem;
+    }
+
+    @include media(lg) {
+        font-size: 1.1rem;
+    }
+
+}
+
+.sizeTextoFooterContacto {
+    font-size: .8rem;
+    color: $negro;
+
+    @include media(xs) {
+        font-size: .85rem;
+    }
+
+    @include media(sm) {
+        font-size: .9rem;
+    }
+
+    @include media(md) {
+        font-size: 1rem;
+    }
+
+    @include media(lg) {
+        font-size: 1.1rem;
+    }
+}

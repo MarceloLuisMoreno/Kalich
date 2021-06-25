@@ -1,0 +1,134 @@
+// Headers
+
+.fondo {
+    background-image: url("../img/fondoPagina1.png");
+    background-blend-mode: luminosity;
+    background-size: contain;
+}
+
+h1 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.textoTitulo {
+    position: absolute;
+    z-index: 1;
+    font-style: normal;
+    text-align: right;
+    border-color: $negro;
+    color: $blanco;
+    text-shadow: 0 0 1px $negro, 0 0 1px $negro, 0 0 1px $negro, 0 0 1px $negro;
+    line-height: 100%;
+    bottom: 1px;
+
+    @include media(sm) {
+        @include posicionTitulo(40px, 300px, 50px);
+    }
+
+    @include media(md) {
+        @include posicionTitulo(50px, 340px, 150px);
+    }
+
+    @include media(lg) {
+        @include posicionTitulo(70px, 500px, 180px);
+    }
+}
+
+
+.margenMenu {
+    margin-top: 6.5rem;
+}
+
+/* Barra Nav */
+.style-nav {
+    background-color: $amarillo;
+}
+
+.navTrabajo {
+    color: white;
+    text-decoration: none;
+
+}
+
+.navTrabajo:hover {
+    color: $negro;
+}
+
+.bg-light {
+    background-color: $amarillo !important;
+}
+
+.size-img-nav {
+    width: 130px;
+}
+
+.margenMenuTrabajos {
+    margin-top: 1rem;
+}
+
+.sizeFontNavBar {
+    font-size: 1.2em;
+}
+
+.containerCarousel {
+    height: 100vh;
+    width: initial;
+    position: relative;
+    vertical-align: middle;
+
+    @include media(xs) {
+        max-height: 450px;
+    }
+
+    @include media(sm) {
+        max-height: 450px;
+    }
+
+    @include media(md) {
+        max-height: 550px;
+    }
+
+    @include media(lg) {
+        max-height: 850px;
+    }
+}
+
+.sizeCirculos {
+    width: 5%;
+}
+
+.posicionCirculos {
+    position: absolute;
+    width: 350px;
+    right: 150px;
+    bottom: -20%;
+    z-index: 1;
+}
+
+.posicionFlecha {
+    position: absolute;
+    left: 8%;
+    bottom: 1%;
+    width: 50%;
+    font-size: 2rem;
+    color: $blanco;
+    z-index: 1;
+}
+
+.styleLema {
+    height: 10%;
+    width: 50%;
+    align-content: center;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.sizeTexto {
+    font-size: 1.6rem !important;
+    font-weight: bolder;
+}
