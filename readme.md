@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Marcelo Luis Moreno</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://getbootstrap.com" target="_blank"> <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
