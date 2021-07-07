@@ -33,6 +33,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <!-- CDN SOURCES Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -145,7 +148,7 @@
         <div class="d-none d-md-block d-lg-block d-xl-block">
 
             <!-- Lema de Kalich -->
-            <div class="styleLema rounded-pill container">
+            <div data-aos="flip-left" class="styleLema rounded-pill container">
                 <p class="  text-center fs-5 p-2 m-1">
                     "El diseño no es solamente como algo que se ve y se
                     siente, el diseño es
@@ -198,7 +201,7 @@
             </div>
         </div>
 
-        <div class="container-fluid container p-5">
+        <div data-aos="zoom-in-up" class="container-fluid container p-5">
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-12">
                     <div class="card w-100">
@@ -215,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 col-12">
+                <div data-aos="zoom-in-up" class="col-lg-6 col-sm-12 col-12">
                     <div class="card w-100">
                         <img src="img/clari.jpg" class="card-img-top rounded-circle" alt="DIE Clarita Graffigna">
                         <div class="card-body">
@@ -274,7 +277,8 @@
                 traslados personales.
             </p>
 
-            <div class="container-fluid p-2 d-flex row justify-content-center">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                class="container-fluid p-2 d-flex row justify-content-center">
                 <div class="card mb-3 container-servicios">
                     <div class="row g-0">
                         <div class="col-md-5">
@@ -295,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 container-servicios">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card mb-3 container-servicios">
                     <div class="row g-0">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -320,7 +324,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 container-servicios">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card mb-3 container-servicios">
                     <div class="row g-0">
                         <div class="col-md-5">
                             <img src="img/ejecucion.png" class="size-foto-servicios" loading="lazy"
@@ -508,13 +512,7 @@
     </footer>
     <!-- Fin Seccion Footer -->
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- Separate Popper and Bootstrap JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -522,6 +520,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
         </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
