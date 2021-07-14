@@ -155,6 +155,21 @@ h1 {
   font-size: 2.5rem;
   font-weight: bolder;
 }
+@media (max-width: 360px) {
+  .tituloNosotros {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .tituloNosotros {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1360px) {
+  .tituloNosotros {
+    font-size: 2rem;
+  }
+}
 
 .sizeNombre {
   font-size: large;
@@ -200,6 +215,21 @@ h1 {
   font-family: "Lato", sans-serif !important;
   font-size: 2.5rem;
   font-weight: bolder;
+}
+@media (max-width: 360px) {
+  .tituloSeccionServicios {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .tituloSeccionServicios {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1360px) {
+  .tituloSeccionServicios {
+    font-size: 2rem;
+  }
 }
 
 .colorServicios {
@@ -287,10 +317,57 @@ h1 {
   max-width: 80%;
 }
 
+.contenedor {
+  position: relative;
+  height: 460px;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 360px) {
+  .contenedor {
+    height: 115px;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .contenedor {
+    height: 190px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1360px) {
+  .contenedor {
+    height: 380px;
+  }
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.3s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+
 /* Seccion Trabajos */
 .tituloSeccionTrabajo {
   font-size: 2.5rem;
   font-weight: bolder;
+}
+@media (max-width: 360px) {
+  .tituloSeccionTrabajo {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .tituloSeccionTrabajo {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1360px) {
+  .tituloSeccionTrabajo {
+    font-size: 2rem;
+  }
 }
 
 .fondo-trabajo1 {
@@ -314,18 +391,24 @@ h1 {
 }
 
 .sizePhoto {
-  width: 35%;
-  min-width: 260px;
+  width: 50%;
+  min-width: 380px;
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  padding: 5px;
+  padding: 2px;
   transition-property: all;
   transition-duration: 1.5s;
 }
 
+.contenedorPhoto {
+  overflow: hidden;
+}
+
 .sizePhoto:hover {
-  transform: scale(1.5);
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 5px 5px 15px white;
 }
 
 .containerCentradoTrabajos, .containerCentrado {
@@ -389,7 +472,7 @@ h1 {
   .tituloTrabajos {
     margin: 2%;
     padding: 2%;
-    font-size: 0.8rem;
+    font-size: 0.1rem;
   }
 }
 @media (min-width: 361px) and (max-width: 768px) {
@@ -418,6 +501,21 @@ h1 {
 .tituloFooter {
   font-size: 2.5rem;
   font-weight: bolder;
+}
+@media (max-width: 360px) {
+  .tituloFooter {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .tituloFooter {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1360px) {
+  .tituloFooter {
+    font-size: 2rem;
+  }
 }
 
 .fondoFooter {

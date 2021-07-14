@@ -3,6 +3,19 @@
 .tituloFooter {
     font-size: $sizeTit;
     font-weight: bolder;
+
+    @include media(xs) {
+        font-size: 1.4rem;
+    }
+
+    @include media(sm) {
+        font-size: 1.8rem;
+    }
+
+    @include media(md){
+        font-size: 2rem;
+    }
+
 }
 
 .fondoFooter {

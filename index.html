@@ -109,7 +109,7 @@
         <div class="container-fluid">
 
             <div>
-                <div id="carouselExampleControls" class="carousel slide pb-3" data-bs-ride="carousel">
+                <div id="carouselKalich" class="carousel slide pb-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/carousel1.png" class="d-block container-fluid containerCarousel"
@@ -124,12 +124,12 @@
                                 loading="lazy" alt="Espacios diseños por Kalich">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselKalich"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselKalich"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -148,7 +148,7 @@
         <div class="d-none d-md-block d-lg-block d-xl-block">
 
             <!-- Lema de Kalich -->
-            <div data-aos="flip-left" class="styleLema rounded-pill container">
+            <div data-aos="zoom-in-up" class="styleLema rounded-pill container">
                 <p class="  text-center fs-5 p-2 m-1">
                     "El diseño no es solamente como algo que se ve y se
                     siente, el diseño es
@@ -164,10 +164,12 @@
 
     <!-- Seccion Nosotros -->
     <section id="nosotros" class="container-fluid p-5 w-100">
+
         <br>
         <br>
         <br>
-        <div class="container card border-dark border-3">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+            class="container card border-dark border-3">
             <div class="row g-1">
                 <div class="col-12 col-sm-4">
                     <img src="img/nosotros.jpg" class="img-fluid w-100 margenFotoNosotros" loading="lazy"
@@ -201,9 +203,9 @@
             </div>
         </div>
 
-        <div data-aos="zoom-in-up" class="container-fluid container p-5">
+        <div data-aos="zoom-in-up" class="container-fluid container p-2">
             <div class="row">
-                <div class="col-lg-6 col-sm-12 col-12">
+                <div class="col-lg-6 col-sm-6 col-12">
                     <div class="card w-100">
                         <img src="img/lili2.png" class="card-img-top rounded-circle" loading="lazy"
                             alt="DIE María Lila Moreno">
@@ -218,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-up" class="col-lg-6 col-sm-12 col-12">
+                <div data-aos="zoom-in-up" class="col-lg-6 col-sm-6 col-12">
                     <div class="card w-100">
                         <img src="img/clari.jpg" class="card-img-top rounded-circle" alt="DIE Clarita Graffigna">
                         <div class="card-body">
@@ -242,14 +244,21 @@
         <br>
         <br>
         <br>
-        <div class="card bg-dark text-white">
-            <img src="img/servicios.png" class="card-img" loading="lazy" alt="Servicios de diseño de Kalich">
-            <div class="card-img-overlay">
+
+        <div class="card container border-dark border-3 text-center servicios">
+            <div class="card-body text-white">
                 <p class="card-title text-center fw-bolder colorServicios tituloSeccionServicios">Nuestros Servicios</p>
             </div>
+            <div>
+                <div class="contenedor text-center">
+                    <img src="img/servicio1.png" class="card-img sizeServicio" loading="lazy"
+                        alt="Servicios de diseño de Kalich">
+                    <img class="top card-img sizeServicio" src="img/servicio2.png" loading="lazy"
+                        alt="Servicios de diseño de Kalich">
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
+
 
         <div class="containerServicios">
             <p class="textoServicios backgroundservicios">
@@ -299,7 +308,8 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card mb-3 container-servicios">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    class="card mb-3 container-servicios">
                     <div class="row g-0">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -324,7 +334,8 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card mb-3 container-servicios">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    class="card mb-3 container-servicios">
                     <div class="row g-0">
                         <div class="col-md-5">
                             <img src="img/ejecucion.png" class="size-foto-servicios" loading="lazy"
@@ -489,6 +500,7 @@
                     </div>
 
                     <div class="col-lg-6 text-center g-3">
+                        <br>
                         <p>SEGUINOS: </p>
                         <a href="https://www.facebook.com/Kalich-Estudio-de-Dise%C3%B1o-1979651132335155"
                             target="_blank" rel="noopener noreferrer">

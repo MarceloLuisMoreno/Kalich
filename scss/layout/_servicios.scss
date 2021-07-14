@@ -4,6 +4,18 @@
     font-family: 'Lato', sans-serif !important;
     font-size: $sizeTit;
     font-weight: bolder;
+
+    @include media(xs) {
+        font-size: 1.4rem;
+    }
+
+    @include media(sm) {
+        font-size: 1.8rem;
+    }
+
+    @include media(md){
+        font-size: 2rem;
+    }
 }
 
 
@@ -88,4 +100,35 @@
 
 .container-servicios {
     max-width: 80%
+}
+
+.contenedor {
+position: relative;
+height: 460px;
+width: 100%;
+float: left;
+
+@include media(xs) {
+    height: 115px;
+}
+
+@include media(sm) {
+    height: 190px;
+}
+
+@include media(md){
+    height: 380px;
+}
+
+}
+
+
+.contenedor img {
+position: absolute;
+left: 0;
+transition: opacity 1.3s ease-in-out;
+}
+
+.contenedor img.top:hover {
+opacity: 0;
 }

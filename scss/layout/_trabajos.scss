@@ -3,6 +3,18 @@
 .tituloSeccionTrabajo {
     font-size: $sizeTit;
     font-weight: bolder;
+
+    @include media(xs) {
+        font-size: 1.4rem;
+    }
+
+    @include media(sm) {
+        font-size: 1.8rem;
+    }
+
+    @include media(md){
+        font-size: 2rem;
+    }
 }
 
 
@@ -28,18 +40,24 @@
 
 
 .sizePhoto {
-    width: 35%;
-    min-width: 260px;
+    width: 50%;
+    min-width: 380px;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    padding: 5px;
+    padding: 2px;
     transition-property: all;
     transition-duration: 1.5s;
 }
 
+.contenedorPhoto {
+    overflow: hidden;
+}
+
 .sizePhoto:hover {
-    transform: scale(1.5);
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 5px 5px 15px white;
 }
 
 %Flexbox {
@@ -107,7 +125,7 @@
     @include media(xs) {
         margin: 2%;
         padding: 2%;
-        font-size: .8rem;
+        font-size: .1rem;
     }
 
     @include media(sm) {
