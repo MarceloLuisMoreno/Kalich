@@ -23,8 +23,10 @@
         content="Diseño integral de espacios y de equipamientos a medida. Diseño de mobiliario. Muebles a medida." />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet type=" text/css"">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css" />
 
     <!-- inconos Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -42,7 +44,7 @@
     <title>Kalich. Diseño de interiores y equipamientos.</title>
 </head>
 
-<body class="fondo">
+<body>
 
 
     <!-- Navbar -->
@@ -53,7 +55,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="img/kalich.png" loading="lazy" alt="Logo de Kalich"
-                        class="align-text-top shadow bg-body rounded size-img-nav">
+                        class="align-text-top shadow bg-body rounded sizeImgageNav">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -66,7 +68,7 @@
                             <a class="nav-link active ms-5" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                            <a class="nav-link" href="#nosotros">Nosotras</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicios">Servicios</a>
@@ -74,20 +76,20 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Trabajos
+                                Proyectos
                             </a>
                             <ul class="dropdown-menu style-nav" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item"
-                                        href="./pages/trabajos.html#habitacionadolescente">Habit.Adolescente</a></li>
+                                        href="./pages/trabajos.html#habitacionadolescente">Dreaming</a></li>
                                 <li><a class="dropdown-item"
-                                        href="./pages/trabajos.html#habitacionmatrimonial">Habit.Matrimonial</a></li>
-                                <li><a class="dropdown-item" href="./pages/trabajos.html#crearplack">Crear Plack</a>
+                                        href="./pages/trabajos.html#habitacionmatrimonial">Jungle</a></li>
+                                <li><a class="dropdown-item" href="./pages/trabajos.html#crearplack">CrearPlack</a>
                                 </li>
                                 <li><a class="dropdown-item" href="./pages/trabajos.html#brbamoblamientos">BRB
                                         Amoblamientos</a></li>
-                                <li><a class="dropdown-item" href="./pages/trabajos.html#vittalia">Consultorios
+                                <li><a class="dropdown-item" href="./pages/trabajos.html#vittalia">CIAT
                                         Vittalia</a></li>
-                                <li><a class="dropdown-item" href="./pages/404.html">Equipamiento</a></li>
+                                <li><a class="dropdown-item" href="./pages/404.html">PLENUS - Vittalia</a></li>
 
                             </ul>
                         </li>
@@ -106,50 +108,50 @@
     <section class="margenMenu" id="home">
 
         <!-- Carrousel -->
-        <div class="container-fluid">
+        <div class="container">
 
-            <div>
-                <div id="carouselKalich" class="carousel slide pb-3" data-bs-ride="carousel">
+            <div class="containerCarousel">
+                <div id="carouselKalich" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/carousel1.png" class="d-block container-fluid containerCarousel"
-                                loading="lazy" alt="Espacios diseños por Kalich">
+                            <img src="img/carousel1.png" class="d-block container-fluid" loading="lazy"
+                                alt="Espacios diseños por Kalich">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carousel2.png" class="d-block container-fluid containerCarousel"
-                                loading="lazy" alt="Espacios diseños por Kalich">
+                            <img src="img/carousel2.png" class="d-block container-fluid" loading="lazy"
+                                alt="Espacios diseños por Kalich">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carousel3.png" class="d-block container-fluid containerCarousel"
-                                loading="lazy" alt="Espacios diseños por Kalich">
+                            <img src="img/carousel3.png" class="d-block container-fluid" loading="lazy"
+                                alt="Espacios diseños por Kalich">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselKalich"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselKalich"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="d-none d-md-block">
+                <div class="d-none d-sm-block">
                     <h1 class="textoTitulo">Diseño Integral
-                        <span> de Espacios</span>
-                        <img src="img/circulos.png" loading="lazy" alt="circulos logo kalich">
+                        de Espacios
+                        <img src="img/circulos.png" class="posicionCirculos" loading="lazy" alt="circulos logo kalich">
                     </h1>
                     <i class="posicionFlecha bi-arrow-down-square-fill"></i>
                 </div>
             </div>
-            <br>
+            <br><br>
         </div>
-        <div class="d-none d-md-block d-lg-block d-xl-block">
 
-            <!-- Lema de Kalich -->
-            <div data-aos="zoom-in-up" class="styleLema rounded-pill container">
-                <p class="  text-center fs-5 p-2 m-1">
+        <!-- Lema de Kalich -->
+        <div>
+            <div data-aos="zoom-in-up" class="styleLema rounded container">
+                <p class="text-center tituloLema">
                     "El diseño no es solamente como algo que se ve y se
                     siente, el diseño es
                     como funciona."
@@ -172,18 +174,15 @@
             class="container card border-dark border-3">
             <div class="row g-1">
                 <div class="col-12 col-sm-4">
-                    <img src="img/nosotros.jpg" class="img-fluid w-100 margenFotoNosotros" loading="lazy"
+                    <img src="img/nosotros.png" class="img-fluid margenFotoNosotros" loading="lazy"
                         alt="card-horizontal-image">
                 </div>
                 <div class="col-12 col-sm-8">
                     <div class="card-body">
-                        <p class="card-title fw-bold tituloNosotros">Nosotros</p>
-                        <p class="card-text sizeTextoNosotros">KALICH nace con el objetivo de brindar servicios de
-                            excelencia, de punta a punta.
-                            La forma en la que percibimos un espacio, las sensaciones que nos provoca, el confort que
-                            nos provee nos
-                            influencian psíquicamente, nos hace sentir cómodos, protegidos, contenidos o todo lo
-                            contrario.
+                        <p class="card-title fw-bold tituloNosotros">Nosotras</p>
+                        <p class="card-text sizeTextoNosotros">Nacimos en marzo de 2017. Somos un equipo
+                            dedicado al diseño de interiores y mobiliario. Juntas creamos este estudio donde la
+                            imaginación es clave y desarolladora. <br>
                             Tenemos la convicción que el diseño de interiores tiene como fin brindar bienestar en los
                             espacios donde nos
                             desarrollamos habitualmente, hogares, ámbito de trabajo, espacios educativos, lugares de
@@ -195,41 +194,40 @@
                             Nos dedicamos al diseño desde diversos enfoques: diseño de interiores (viviendas, locales
                             comerciales, remodelaciones, espacios de trabajo), diseño de mobiliario, diseño de
                             ambientación para
-                            eventos y diseño de imagenes renderizadas. <br>
-                            Las soluciones a tus proyectos en forma planificada, estética y funcional está en KALICH.
+                            eventos y diseño de imagenes renderizadas.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        <br><br>
         <div data-aos="zoom-in-up" class="container-fluid container p-2">
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-12">
                     <div class="card w-100">
                         <img src="img/lili2.png" class="card-img-top rounded-circle" loading="lazy"
                             alt="DIE María Lila Moreno">
-                        <div class="card-body">
-                            <h2 class="card-title sizeNombre fw-bold">D.I.E. Lila Moreno</h2>
-                            <p class="card-text">Estudió en la UNT Facultad de Bellas Artes.
-                                Se recibió como Diseñadora de Interiores y Equipamientos.
-                            </p>
-                            <a href="https://www.instagram.com/lilitaamoreno/" target="_blank" rel="noopener noreferrer"
-                                class="btn btn-outline-secondary">Go
-                                Instagram</a>
+                        <div class="card-body text-center">
+                            <h2 class="card-title sizeNombre fw-bold">Lila Moreno</h2>
+                            <p class="card-text">Diseñadora de Interiores y Equipamientos. UNT</p>
+                            <a href="https://www.instagram.com/lilitaamoreno/" target="_blank"
+                                rel="noopener noreferrer"> <i class="btn bi-instagram sizeIconos"></i>
+                            </a>
+
+
+
                         </div>
                     </div>
                 </div>
                 <div data-aos="zoom-in-up" class="col-lg-6 col-sm-6 col-12">
                     <div class="card w-100">
                         <img src="img/clari.jpg" class="card-img-top rounded-circle" alt="DIE Clarita Graffigna">
-                        <div class="card-body">
-                            <h5 class="card-title sizeNombre fw-bold">D.I.E. Clara Graffigna </h5>
-                            <p class="card-text">Estudió en la UNT Facultad de Bellas Artes.
-                                Se recibió como Diseñadora de Interiores y Equipamientos.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title sizeNombre fw-bold">Clara Graffigna </h5>
+                            <p class="card-text">Diseñadora de Interiores y Equipamientos. UNT</p>
                             <a href="https://www.instagram.com/clarita_graffigna/" target="_blank"
-                                rel="noopener noreferrer" class="btn btn-outline-secondary">Go
-                                Instagram</a>
+                                rel="noopener noreferrer"> <i class="btn bi-instagram sizeIconos"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +248,8 @@
             </div>
             <div>
                 <div class="contenedor text-center">
-                    <img src="img/servicio1.png" class="card-img sizeServicio" loading="lazy" alt="Servicios de diseño de Kalich">
+                    <img src="img/servicio1.png" class="card-img sizeServicio" loading="lazy"
+                        alt="Servicios de diseño de Kalich">
                     <img src="img/servicio2.png" class="top card-img sizeServicio" loading="lazy"
                         alt="Servicios de diseño de Kalich">
                 </div>
@@ -260,46 +259,32 @@
 
         <div class="containerServicios">
             <p class="textoServicios backgroundservicios">
-                Luego de la conversación presencial y posterior relevamiento de las necesidades del
-                cliente, procedemos a enviar nuestra propuesta de colaboración profesional para el
-                Diseño Interior, Equipamiento y Decoración, según se detalla a continuación:
+                PRESENTES EN EL DETALLE:
                 <br>
                 <br>
-                Elaboramos una propuesta para cada espacio con la idea de un diseño integral y
-                decoración de los espacios nuevos, tratando de generar zonificaciones diferentes pero
-                manteniendo armonía en el conjunto total.
-                El mismo incluye la toma de medidas para rectificar y realizar el dibujo y proyecto 3d,
-                renders (imágenes fotorealistas) de como quedará la obra analizada.
-                <br>
-                <br>
-                TAREAS A REALIZAR EN PROYECTO DE DISEÑO:
-                Organización del espacio, zonificación, diseño de envolvente, muebles a medida y
-                elección de mobiliario nuevo, diseño y elección de iluminación, decoración, cortinas,
-                acabados en paredes, detalles finales.
-                El diseño puede variar y mejorar de acuerdo a las consultas y llegar a la propuesta
-                final deseada por el cliente.
-                Nuestros honorarios son calculados en base al tamaño de la obra y/o de la
-                remodelación a realizar. También están contempladas todas las visitas a la obra,
-                la comunicación y coordinación de todo el proyecto con los operarios y los
-                traslados personales.
+                Escuchamos las necesidades de cada cliente, para inspirarnos en el otro y luego reflejar eso en el
+                diseño puro y aplicado.
+                De esa manera logramos espacios originales, que responden a la funcionalidad y al uso específico que
+                cada cliente le da a sus espacios, creando así ambientes únicos, con un carácter muy personal. Es un
+                mix, en lo que el cliente pensó e idealizo, y lo que nosotras con nuestro conocimiento y nuestro equipo
+                de trabajo podemos lograr materializar.
             </p>
 
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                 class="container-fluid p-2 d-flex row justify-content-center">
-                <div class="card mb-3 container-servicios">
+                <div class="card mb-3 containerServicio">
                     <div class="row g-0">
                         <div class="col-md-5">
                             <img src="img/asesoria.png" class="size-foto-servicios" loading="lazy"
-                                alt="ilustracion de la pagina storyset">
+                                alt="Fotografía ilustrando una cartilla de colores para toma de decisiones">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <h5 class="tituloServicios">Asesorías</h5>
-                                <p class="textoServicios">Se comienza con una entrevista previa al cliente, encontrando
-                                    la necesidad a cubrir. En estos casos, el cliente ya tiene un espacio armado, pero
-                                    necesita reacomodar de una manera diferente. Mejorando la combinación de materiales
-                                    y dando prioridad a los detalles. Logramos así, brindar una asesoría especial en
-                                    cada espacio en particular.
+                                <p class="textoServicios">Son completamente personalizadas y a medida de cada cliente.
+                                    Generalmente el cliente tiene ya un espacio armado, pero necesita reacomodar de una
+                                    manera distinta. Tratamos de orientar en la elección de mobiliario, distribución,
+                                    estilo decorativo para así llegar a cubrir las necesidades particulares de cada uno.
                                 </p>
                             </div>
                         </div>
@@ -307,7 +292,7 @@
                 </div>
 
                 <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    class="card mb-3 container-servicios">
+                    class="card mb-3 containerServicio">
                     <div class="row g-0">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -327,17 +312,16 @@
                         </div>
                         <div class="col-md-5">
                             <img src="img/proyecto.png" class="size-foto-servicios" loading="lazy"
-                                alt="ilustracion de la pagina storyset">
+                                alt="Fotografia ilustrando un escritorio con materiales para diseño">
                         </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    class="card mb-3 container-servicios">
+                <div class="card mb-3 containerServicio">
                     <div class="row g-0">
                         <div class="col-md-5">
-                            <img src="img/ejecucion.png" class="size-foto-servicios" loading="lazy"
-                                alt="ilustracion de la pagina storyset">
+                            <video src="videos/ejecucion.mp4" class="container" autoplay loop muted></video>
+
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
@@ -366,7 +350,7 @@
     <!-- Seccion Trabajos -->
     <section id="trabajos" class="container-fluid">
         <div class="container px-4 py-5" id="custom-cards">
-            <p class="p-3 border-bottom back tituloSeccionTrabajo backgroundAmarillo">Nuestros Trabajos</p>
+            <p class="p-3 border-bottom back tituloSeccionTrabajo rounded">Proyectos Realizados</p>
 
 
             <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 align-items-stretch g-4 py-5">
@@ -376,8 +360,8 @@
                         <div>
                             <ul>
                                 <li class="pt-5 mt-5 mb-4 fs-4 lh-base fw-bold">
-                                    <a class="navTrabajo" href="./pages/trabajos.html#habitacionadolescente">Habitación
-                                        Adolescente</a>
+                                    <a class="navTrabajo"
+                                        href="./pages/trabajos.html#habitacionadolescente">Dreaming</a>
                                 </li>
                             </ul>
                         </div>
@@ -389,8 +373,7 @@
                         <div>
                             <ul>
                                 <li class="pt-5 mt-5 mb-4 fs-4 lh-base fw-bold">
-                                    <a class="navTrabajo" href="./pages/trabajos.html#habitacionmatrimonial">Habitación
-                                        Matrimonial</a>
+                                    <a class="navTrabajo" href="./pages/trabajos.html#habitacionmatrimonial">Jungle</a>
                                 </li>
                             </ul>
                         </div>
@@ -449,7 +432,7 @@
         <p class="mb-2 tituloFooter">
             Contactanos
         </p>
-        <div class="col-12"> </div>
+        <div class="col-12 "> </div>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">NOMBRE Y APELLIDO *</label>
@@ -476,13 +459,12 @@
                 <button type="button" class="btn btn-outline-dark">Enviar</button>
             </div>
             <div class="col-12"> </div>
-            <div class="col-12"> </div>
 
             <section class="container">
 
                 <div class="row">
 
-                    <div class="col-lg-6 text-center">
+                    <div class="text-center">
                         <h5 class="sizeTextoFooterContacto ">
                             KALICH Contactos: <br>
                             D.I.E. LILA MORENO Celular: 381-1111111 <br>
@@ -490,29 +472,15 @@
                             Email: contacto@ kalich.com.ar
                         </h5>
                         <a href="https://api.whatsapp.com/send?phone=549115193030" class="float" target="_blank">
-                            <button type="button" class="btn btn-outline-dark">
-                                <i class="bi bi-whatsapp" rel="noopener noreferrer"></i>
-                                Whatsapp
-                            </button>
+                            <i class="bi-whatsapp btn sizeIconos" rel="noopener noreferrer"></i>
                         </a>
-                    </div>
-
-                    <div class="col-lg-6 text-center g-3">
-                        <br>
-                        <p>SEGUINOS: </p>
                         <a href="https://www.facebook.com/Kalich-Estudio-de-Dise%C3%B1o-1979651132335155"
                             target="_blank" rel="noopener noreferrer">
-                            <button type="button" class="btn btn-outline-dark">
-                                <i class="bi bi-facebook"></i>
-                                Facebook
-                            </button>
+                            <i class="btn bi-facebook sizeIconos"></i>
                         </a>
                         <a href="https://www.instagram.com/interiores.kalich/" target="_blank"
                             rel="noopener noreferrer">
-                            <button type="button" class="btn btn-outline-dark">
-                                <i class="bi bi-instagram"></i>
-                                Instagram
-                            </button>
+                            <i class="btn bi-instagram sizeIconos"></i>
                         </a>
                     </div>
 

@@ -1,8 +1,14 @@
 /* Seccion Trabajos */
 
 .tituloSeccionTrabajo {
+    font-family: 'GidolinyaRegular', sans-serif;
     font-size: $sizeTit;
     font-weight: bolder;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+
 
     @include media(xs) {
         font-size: 1.4rem;
@@ -12,7 +18,7 @@
         font-size: 1.8rem;
     }
 
-    @include media(md){
+    @include media(md) {
         font-size: 2rem;
     }
 }
@@ -80,70 +86,30 @@
     width: 30%;
 }
 
-.backgroundAmarillo {
-    background-color: rgb(246, 242, 124);
-}
-
 /* boton Home */
 .botonHome {
     text-decoration: none;
     font-size: medium;
-    color: $amarillo;
+    color: $colorNav;
     background-color: $grisoscuro;
     border-radius: 8px;
     padding: 0.5em;
     margin: 2%;
 
     &:hover {
-        color: $negro;
+        color: $fondoOscuro;
     }
-}
-
-
-.fondoTrabajos {
-    background-color: $grisclaro;
-    border-radius: 3%;
-}
-
-.margenEstaticoNav {
-    height: 6.5rem;
-    background-color: $grisclaro;
 }
 
 .margenMenuTrabajos {
-    margin: 6.5rem 0 1rem 0;
+    margin-top: 8%;
 }
 
-.tituloTrabajos {
-    font-size: 1rem;
-    font-weight: bolder;
-    text-align: center;
-    color: $blanco;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-
-
-    @include media(xs) {
-        margin: 2%;
-        padding: 2%;
-        font-size: .1rem;
-    }
-
-    @include media(sm) {
-        margin: 2%;
-        padding: 2%;
-        font-size: .9rem;
-    }
-
-    @include media(md) {
-        margin: 4%;
-        padding: 3%;
-        font-size: 1.2rem;
-    }
-
-    @include media(lg) {
-        margin: 4%;
-        padding: 3%;
-        font-size: 1.5rem;
-    }
-
+.containerCarousel {
+    padding: auto;
+    max-height: 90vh;
+    max-width: 100%;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
 }

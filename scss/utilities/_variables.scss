@@ -1,11 +1,12 @@
 // Variables
 
 // colores 
-$amarillo: rgb(246, 242, 124);
-$grisclaro: rgb(168, 168, 168);
+$colorNav: rgb(168, 168, 168);
+$colorFooter: rgb(168, 168, 168);
 $grisoscuro: rgb(102, 102, 102);
-$negro: black;
-$blanco: white;
+$colorServicios: rgb(235, 204, 147);
+$fondoOscuro: black;
+$fondoClaro: white;
 
 // variables puntos de quiebre:
 $breakpoint-xs: 360px;
@@ -14,5 +15,5 @@ $breakpoint-md: 1024px;
 $breakpoint-lg: 1361px;
 
 // variables tamaño de títulos
-$sizeTit: 2.5rem
+$sizeTit: 3rem
 

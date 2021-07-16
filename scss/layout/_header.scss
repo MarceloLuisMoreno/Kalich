@@ -1,11 +1,5 @@
 // Headers
 
-.fondo {
-    background-image: url("../img/fondoPagina1.png");
-    background-blend-mode: luminosity;
-    background-size: contain;
-}
-
 h1 {
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -14,26 +8,27 @@ h1 {
 }
 
 .textoTitulo {
+    font-family: 'GidolinyaRegular', sans-serif;
     position: absolute;
     z-index: 1;
     font-style: normal;
     text-align: right;
-    border-color: $negro;
-    color: $blanco;
-    text-shadow: 0 0 1px $negro, 0 0 1px $negro, 0 0 1px $negro, 0 0 1px $negro;
-    line-height: 100%;
-    bottom: 1px;
+    border-color: $fondoOscuro;
+    color: $fondoClaro;
+    text-shadow: 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro;
+    line-height: 95%;
+    bottom: -1px;
 
     @include media(sm) {
-        @include posicionTitulo(40px, 300px, 50px);
+        @include posicionTitulo(30px, 250px, 50px);
     }
 
     @include media(md) {
-        @include posicionTitulo(50px, 340px, 150px);
+        @include posicionTitulo(50px, 350px, 100px);
     }
 
     @include media(lg) {
-        @include posicionTitulo(70px, 500px, 180px);
+        @include posicionTitulo(85px, 500px, 85px);
     }
 }
 
@@ -44,7 +39,7 @@ h1 {
 
 /* Barra Nav */
 .style-nav {
-    background-color: $amarillo;
+    background-color: $colorNav;
 }
 
 .navTrabajo {
@@ -54,19 +49,15 @@ h1 {
 }
 
 .navTrabajo:hover {
-    color: $negro;
+    color: $fondoOscuro;
 }
 
 .bg-light {
-    background-color: $amarillo !important;
+    background-color: $colorNav !important;
 }
 
-.size-img-nav {
-    width: 130px;
-}
-
-.margenMenuTrabajos {
-    margin-top: 1rem;
+.sizeImgageNav {
+    width: 135px;
 }
 
 .sizeFontNavBar {
@@ -74,53 +65,44 @@ h1 {
 }
 
 .containerCarousel {
-    height: 100vh;
     width: initial;
+    overflow: hidden;
     position: relative;
     vertical-align: middle;
-
-    @include media(xs) {
-        max-height: 450px;
-    }
-
-    @include media(sm) {
-        max-height: 450px;
-    }
-
-    @include media(md) {
-        max-height: 550px;
-    }
-
-    @include media(lg) {
-        max-height: 850px;
-    }
-}
-
-.sizeCirculos {
-    width: 5%;
+    align-items: center;
 }
 
 .posicionCirculos {
-    position: absolute;
     width: 350px;
     right: 150px;
-    bottom: -20%;
     z-index: 1;
+
+    @include media(sm) {
+        width: 150px;
+    }
+
+    @include media(md) {
+        width: 250px;
+    }
+
+    @include media(lg) {
+        width: 350px;
+    }
 }
 
 .posicionFlecha {
     position: absolute;
-    left: 8%;
+    left: 10%;
     bottom: 1%;
     width: 50%;
     font-size: 2rem;
-    color: $blanco;
+    color: $fondoClaro;
     z-index: 1;
 }
 
 .styleLema {
-    height: 10%;
-    width: 50%;
+    height: 8%;
+    width: 65%;
     align-content: center;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
@@ -128,7 +110,30 @@ h1 {
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
+.tituloLema {
+    font-family: 'GidolinyaRegular', sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+
+    @include media(xs) {
+        font-size: 1rem;
+    }
+
+    @include media(sm) {
+        font-size: 1.2rem;
+    }
+
+    @include media(md) {
+        font-size: 1.5rem;
+    }
+}
+
 .sizeTexto {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
+    font-weight: bolder;
+}
+
+.sizeIconos {
+    font-size: 1.8rem !important;
     font-weight: bolder;
 }
