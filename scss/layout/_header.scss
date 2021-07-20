@@ -18,6 +18,7 @@ h1 {
     text-shadow: 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro, 0 0 3px $fondoOscuro;
     line-height: 95%;
     bottom: -1px;
+    font-display: fallback;
 
     @include media(sm) {
         @include posicionTitulo(30px, 250px, 50px);
@@ -32,6 +33,9 @@ h1 {
     }
 }
 
+img{
+    aspect-ratio: attr(width) / attr(height);
+}
 
 .margenMenu {
     margin-top: 6.5rem;
@@ -57,7 +61,7 @@ h1 {
 }
 
 .sizeImgageNav {
-    width: 135px;
+    width: 100%;
 }
 
 .sizeFontNavBar {
@@ -113,6 +117,7 @@ h1 {
 .tituloLema {
     font-family: 'GidolinyaRegular', sans-serif;
     font-size: 2rem;
+    font-display: fallback;
     padding: 10px;
 
     @include media(xs) {
