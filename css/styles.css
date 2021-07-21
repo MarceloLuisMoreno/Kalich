@@ -410,6 +410,10 @@ img {
   background-image: url("../img/vittalia.jpg");
 }
 
+.fondo-trabajo6 {
+  background-image: url("../img/plenus.jpg");
+}
+
 .containerCentradoTrabajos, .containerCentrado {
   display: flex;
   align-items: center;
