@@ -1,6 +1,5 @@
 // Mixin para media quer
 
-
 @mixin media($media) {
   @if $media==xs {
     @media (max-width: $breakpoint-xs) {

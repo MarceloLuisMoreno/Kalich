@@ -1,7 +1,7 @@
 /* Footer */
 
 .tituloFooter {
-    font-family: 'GidolinyaRegular', sans-serif ;
+    font-family: 'GidolinyaRegular', sans-serif;
     font-size: $sizeTit;
     font-weight: bolder;
     font-display: fallback;
@@ -14,10 +14,9 @@
         font-size: 1.8rem;
     }
 
-    @include media(md){
+    @include media(md) {
         font-size: 2rem;
     }
-
 }
 
 .fondoFooter {
@@ -31,7 +30,7 @@
 }
 
 .sizeTextoFooter {
-    padding:1.5%;
+    padding: 1.5%;
     font-size: 1.3rem;
     color: $fondoOscuro;
 
@@ -50,7 +49,6 @@
     @include media(lg) {
         font-size: 1.1rem;
     }
-
 }
 
 .sizeTextoFooterContacto {
